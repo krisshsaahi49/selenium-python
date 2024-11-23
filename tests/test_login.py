@@ -8,7 +8,9 @@ URL = "https://automation.krisshsaahi.dev"
 
 @pytest.fixture
 def driver():
-    driver = webdriver.Chrome(service=ChromeService(executable_path=ChromeDriverManager().install()))
+    options = webdriver.ChromeOptions()
+    options.add_argument("headless")
+    driver = webdriver.Chrome(service=ChromeService(executable_path=ChromeDriverManager().install()), options=options)
     driver.delete_all_cookies()
     driver.maximize_window()
     driver.implicitly_wait(15)
