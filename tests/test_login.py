@@ -10,6 +10,9 @@ URL = "https://automation.krisshsaahi.dev"
 def driver():
     options = webdriver.ChromeOptions()
     options.add_argument("headless")
+    options.add_argument("window-size=1920x1080")
+    options.add_argument("disable-gpu")
+    options.add_argument("--no-sandbox")
     driver = webdriver.Chrome(service=ChromeService(executable_path=ChromeDriverManager().install()), options=options)
     driver.delete_all_cookies()
     driver.maximize_window()
