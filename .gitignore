@@ -1,0 +1,16 @@
+/report.html
+/assets/style.css
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+/misc.xml
+/Python_Selenium.iml
+/vcs.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/misc.xml
+/.idea/Python_Selenium.iml
+/.idea/vcs.xml
