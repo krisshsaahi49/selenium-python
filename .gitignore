@@ -15,9 +15,9 @@
 /.idea/Python_Selenium.iml
 /.idea/vcs.xml
 # Ignore macOS system files
-.DS_Store
+/.DS_Store
 
 # Ignore Python bytecode and cache files
-__pycache__/
-*.pyc
+/__pycache__/
+/*.pyc
 
